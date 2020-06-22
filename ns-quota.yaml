@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: mem-cpu-demo
+spec:
+  hard:
+    requests.cpu: "500m" #最小需求
+    requests.memory: "1Gi"
+    limits.cpu: "1500m" #最大需求限制
+    limits.memory: "1Gi"
